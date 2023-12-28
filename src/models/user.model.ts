@@ -1,5 +1,4 @@
 import {
-	getModelForClass,
 	modelOptions,
 	prop,
 	Severity,
@@ -16,7 +15,7 @@ export enum Role {
 	TEACHER = "teacher",
 }
 
-class Token {
+export class Token {
 	@prop({ required: true })
 	token: string;
 }
@@ -91,7 +90,3 @@ export class User {
 		}
 	}
 }
-
-const UserModel = getModelForClass(User);
-
-export default UserModel;

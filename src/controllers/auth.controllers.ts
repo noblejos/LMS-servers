@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import UserModel from "../models/user.model";
 import { successfulRequest } from "../helpers/responses";
 import { BadRequestError } from "../errors/bad-request-error";
+import { UserModel } from "../models";
 
 const register = async (req: Request, res: Response) => {
 	const rqb = req.body;
